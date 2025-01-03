@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="today.css">
+    
+</head>
+<body>
+    <div id="div"> 
+        <div class="container">
+        <h1>Form Validation</h1>
+        </div>
+    <form onsubmit=" return submitForm()">
+        <label class="l1"   for="name"> Name:</label>
+        <input class="b1" type="text" id="name" placeholder="Enter your name"> 
+        <br>
+        <span id="a1" style="color: red;"></span>
+        <br>
+        <label class="l1" for="age"> Age:</label>
+        <input class="b1"  type="number" id="age" placeholder="Enter your age">
+        <br>
+        <span  id="a2" style="color: red;"></span>
+        <br>
+        <label class="l1" for="email"> Email:</label>
+        <input class="b1"   type="email" id="email" placeholder="Enter your email">
+        <br>
+        <span id="a3" style="color: red;"></span>
+        <br>
+        <label  class="l1" for="password">Password:</label>
+        <input class="b1"   type="password" id="password" placeholder="Enter your password">
+        <br>
+        <span id="a4" style="color: red;"></span>
+        <br><br>
+        <input id="b2"  type="submit">
+    </form>
+</div>
+    
+    <script>
+        function submitForm(){
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+         if(name==""){
+    document.getElementById("a1").innerHTML="Enter your Name"
+    return false;
+        }
+    else{
+    document.getElementById("a1").innerHTML=""
+       }
+    if(age==""){
+    document.getElementById("a2").innerHTML="Enter your Age"
+    return false;
+    }
+    else{
+    document.getElementById("a2").innerHTML="" 
+    }
+    if(email==""){
+    document.getElementById("a3").innerHTML="Enter your Email"
+    return false;
+    }
+    else{
+    document.getElementById("a3").innerHTML=""
+    }
+    if(password==""){
+    document.getElementById("a4").innerHTML="Enter your Password"
+    return false;
+    }
+    else{
+    document.getElementById("a4").innerHTML=""
+    }
+    
+    alert("Form submitted successfully")
+}
+    </script>
+</body>
+</html>
