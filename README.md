@@ -1,1 +1,1 @@
-# Form-Validation-
+"Form validation project built with HTML, CSS, and JavaScript. Implements real-time error detection, custom styling, and responsive design, enhancing usability while showcasing the integration of front-end technologies."
